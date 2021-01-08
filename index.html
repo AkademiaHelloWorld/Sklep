@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>Hello, world!</title>
+    <link href="styles.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-lg py-4" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Brand</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Strona główna</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sklep
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Zdjęcia</a></li>
+                      <li><a class="dropdown-item" href="#">Plakaty</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Sesje</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Kontakt</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Koszyk <span class="badge bg-secondary">4</span></a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center mx-2 nav-icon">
+                        <img src="translator2.svg" height="25" width="25" class="img-fluid">
+                    </li>
+                    <li class="nav-item d-flex align-items-center mx-2 nav-icon">
+                        <img src="avatar.svg" height="25" width="25" class="img-fluid">
+                    </li>
+                    <li class="nav-item d-flex align-items-center mx-2 nav-icon" data-bs-toggle="modal" data-bs-target="#exampleModal" id="searchButton">
+                        <img src="loupe.svg" height="25" width="25" class="img-fluid">
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="car1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Toyota Supra</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="car2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nissan GTR</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="car3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ford Mustang</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+        </section>
+        <section class="bg-light">
+            <div class="container-fluid mt-5 py-5">
+                <div class="row justify-content-between">
+                    <div class="col-sm-3 d-flex justify-content-center d-flex justify-content-center">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="car4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">10$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 d-flex justify-content-center">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="car5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">10$</p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 d-flex justify-content-center">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="car6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">10$</p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 d-flex justify-content-center">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="car7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">10$</p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="col-sm-6 d-flex justify-content-end">
+                        <img class="img-fluid" src="car8.jpg" height="300px">
+                    </div>
+                    <div class="col-sm-6 d-flex flex-column justify-content-center align-items-start">
+                        <form class="w-50">
+                            <div class="mb-3">
+                              <label for="inputName" class="form-label">Imie</label>
+                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">Podaj swoje imie</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">Podaj adres email</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="textArea" class="form-label">Wpisz swoją wiadomość</label>
+                              <textarea class="form-control" id="textArea" placeholder="Required example textarea" required></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Chcesz kopie maila u siebie?</label>
+                            </div>
+                          </form>
+                          <button type="submit" class="btn btn-primary">Wyślij</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-light p-3 mt-3">
+      <div class="container d-flex justify-content-between text-muted align-items-center">
+        <p class="mb-1">Stworzone przez Maciej Rusek &copy; 2021</p>
+        <a href="#">
+          <img src="top.svg" alt="top" height="50" width="50">
+        </a>
+      </div>
+    </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen container-fluid d-flex justify-content-between align-items-start mt-5 p-5">
+            <input class="form-control form-control-lg w-25" id="searchInput" type="text" placeholder="Szukaj produktów..." aria-label=".form-control-lg example">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+  </body>
+</html>

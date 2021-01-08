@@ -1,0 +1,50 @@
+#navbar {
+    position: absolute;
+    width: 100%;
+    background-color: transparent !important;
+    color: white !important;
+    z-index: 10;
+}
+
+@media (max-width: 1000px) {
+    #navbar {
+        position: static;
+        width: 100%;
+    }
+
+    .nav-icon {
+        margin-top: 10px;
+    }
+}
+
+#searchInput {
+    background-color: rgba(0, 0, 0, 0.001);
+    border: none;
+}
+
+#searchInput::placeholder {
+    color: darkgray;
+}
+
+#searchInput:focus {
+    border: none;
+    box-shadow: none;
+}
+
+#searchButton {
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #707070;
+    border-color: #707070;
+}
+
+.btn-primary:focus, .btn-primary:hover{
+    background-color: #808080;
+    border-color: #808080;
+  }
+
+.btn-primary:focus, .btn-primary:active:focus {
+  box-shadow: 0 0 0 0.25rem rgba(70, 70, 70,.5);
+}
